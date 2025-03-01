@@ -3,75 +3,259 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jaden Logistics - Coming Soon</title>
+  <title>Jaden Logistics - Professional Logistics Solutions</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Add Montserrat font from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Add Font Awesome for social icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Add Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- Header Navigation -->
+  <header>
     <div class="container">
-      <h1>Delivering Excellence, Connecting the World</h1>
-      <p>Stay tuned as we revolutionize the logistics industry with innovative solutions for freight, warehousing, and supply chain management.</p>
-      <button>Get a Quote</button>
+      <nav>
+        <div class="logo">
+          <img src="images/jaden-logo.png" alt="Jaden Logistics Logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact" class="btn-primary">Contact Us</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Delivering Excellence, Connecting the World</h1>
+        <p>Industry-leading logistics solutions tailored for the modern supply chain. Reliable freight, warehousing, and supply chain management for businesses of all sizes.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary">Get a Quote</button>
+          <button class="btn-secondary">Learn More</button>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- About Us Section -->
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
-      <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="About Us">
+      <div class="about-image">
+        <img src="images/logistics-warehouse.jpg" alt="Modern Logistics Warehouse">
+      </div>
       <div class="about-content">
-        <h2>About Us</h2>
-        <p>Jaden Logistics is a trusted leader in the logistics industry, committed to delivering excellence through safety, reliability, and innovation. Our mission is to connect the world with seamless supply chain solutions.</p>
+        <span class="section-tag">About Us</span>
+        <h2>Global Solutions with <span class="highlight">Local Expertise</span></h2>
+        <p>Jaden Logistics is a trusted leader in the global logistics industry with over 15 years of experience. We combine cutting-edge technology with proven logistics expertise to deliver customized supply chain solutions that drive efficiency and growth.</p>
+        <p>Our team of logistics professionals is dedicated to exceptional service, safety, and reliability—ensuring your goods move seamlessly from origin to destination.</p>
+        <div class="stats">
+          <div class="stat-box">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Countries Served</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">2,000+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section class="services">
+  <section id="services" class="services">
     <div class="container">
-      <h2>Our Services</h2>
+      <span class="section-tag">Our Services</span>
+      <h2>Comprehensive <span class="highlight">Logistics Solutions</span></h2>
+      <p class="section-intro">We offer a full spectrum of logistics services designed to optimize your supply chain operations.</p>
+      
       <div class="service-cards">
         <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Freight">
+          <div class="service-icon">
+            <i class="fas fa-truck-moving"></i>
+          </div>
           <h3>Freight Services</h3>
-          <p>Efficient and reliable freight solutions tailored to your needs.</p>
+          <p>Efficient and reliable freight solutions by air, sea, and land, tailored to your specific needs and timelines.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
+        
         <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Warehousing">
+          <div class="service-icon">
+            <i class="fas fa-warehouse"></i>
+          </div>
           <h3>Warehousing</h3>
-          <p>Secure and scalable warehousing solutions for your business.</p>
+          <p>State-of-the-art warehousing facilities with advanced inventory management systems for secure and efficient storage.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
+        
         <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Supply Chain">
+          <div class="service-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
           <h3>Supply Chain Management</h3>
-          <p>End-to-end supply chain solutions to optimize your operations.</p>
+          <p>End-to-end supply chain solutions designed to streamline operations, reduce costs, and improve visibility.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>Global Distribution</h3>
+          <p>Worldwide distribution networks leveraging strategic partnerships to ensure timely delivery to any destination.</p>
+          <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
+  <!-- Why Choose Us Section -->
+  <section class="why-us">
     <div class="container">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonial-cards">
-        <div class="testimonial-card">
-          <p>"Jaden Logistics has transformed our supply chain operations. Highly recommended!"</p>
-          <h4>- Client A</h4>
+      <div class="why-us-content">
+        <span class="section-tag">Why Choose Us</span>
+        <h2>The Jaden <span class="highlight">Advantage</span></h2>
+        <div class="advantages">
+          <div class="advantage">
+            <div class="advantage-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="advantage-text">
+              <h4>Operational Excellence</h4>
+              <p>Streamlined processes and cutting-edge technology for maximum efficiency.</p>
+            </div>
+          </div>
+          
+          <div class="advantage">
+            <div class="advantage-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="advantage-text">
+              <h4>Safety & Reliability</h4>
+              <p>Industry-leading safety standards and proven reliability in every shipment.</p>
+            </div>
+          </div>
+          
+          <div class="advantage">
+            <div class="advantage-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="advantage-text">
+              <h4>Expert Team</h4>
+              <p>Experienced professionals dedicated to providing exceptional service.</p>
+            </div>
+          </div>
+          
+          <div class="advantage">
+            <div class="advantage-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <div class="advantage-text">
+              <h4>Custom Solutions</h4>
+              <p>Tailored logistics strategies designed for your specific business needs.</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="why-us-image">
+        <img src="images/logistics-technology.jpg" alt="Logistics Technology">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <span class="section-tag">Testimonials</span>
+      <h2>What Our <span class="highlight">Clients Say</span></h2>
+      
+      <div class="testimonial-slider">
         <div class="testimonial-card">
-          <p>"Their team is professional, reliable, and always delivers on time."</p>
-          <h4>- Client B</h4>
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Jaden Logistics has transformed our supply chain operations. Their expertise and dedication to excellence have significantly improved our efficiency and reduced costs."</p>
+          <div class="testimonial-author">
+            <img src="images/client1.jpg" alt="Sarah Johnson">
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <p>Operations Director, Global Retail Inc.</p>
+            </div>
+          </div>
         </div>
+        
         <div class="testimonial-card">
-          <p>"Exceptional service and innovative solutions. A true partner in logistics."</p>
-          <h4>- Client C</h4>
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Their team is professional, reliable, and always delivers on time. We've been working with Jaden for over five years, and they continue to exceed our expectations."</p>
+          <div class="testimonial-author">
+            <img src="images/client2.jpg" alt="Michael Chen">
+            <div class="author-info">
+              <h4>Michael Chen</h4>
+              <p>Supply Chain Manager, Tech Solutions Ltd.</p>
+            </div>
+          </div>
         </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"Exceptional service and innovative solutions. Jaden Logistics is a true partner in our growth strategy. Their global reach and local expertise are unmatched in the industry."</p>
+          <div class="testimonial-author">
+            <img src="images/client3.jpg" alt="Rebecca Martinez">
+            <div class="author-info">
+              <h4>Rebecca Martinez</h4>
+              <p>CEO, International Trade Co.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="cta">
+    <div class="container">
+      <h2>Ready to Optimize Your Supply Chain?</h2>
+      <p>Contact our team today for a customized logistics solution tailored to your business needs.</p>
+      <div class="cta-buttons">
+        <button class="btn-primary">Request a Quote</button>
+        <button class="btn-secondary">Contact Sales</button>
       </div>
     </div>
   </section>
@@ -79,13 +263,179 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="social-links">
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/jaden-logo-white.png" alt="Jaden Logistics">
+          <p>Delivering excellence in logistics since 2008.</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-services">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Freight Services</a></li>
+            <li><a href="#">Warehousing</a></li>
+            <li><a href="#">Supply Chain Management</a></li>
+            <li><a href="#">Global Distribution</a></li>
+            <li><a href="#">Customs Clearance</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Logistics Way, Suite 500<br>New York, NY 10001</p>
+          <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> info@jadenlogistics.com</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
       </div>
-      <p>&copy; 2023 Jaden Logistics. All rights reserved.</p>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Jaden Logistics. All rights reserved.</p>
+        <ul class="footer-legal">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
+
+  <!-- JavaScript -->
+  <script>
+   // Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+      // Accessibility - toggle aria-expanded
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const isClickInside = navLinks.contains(event.target) || menuToggle.contains(event.target);
+      if (!isClickInside && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    
+    // Close menu when clicking on nav links (for mobile)
+    const navItems = navLinks.querySelectorAll('a');
+    navItems.forEach(item => {
+      item.addEventListener('click', function() {
+        if (window.innerWidth < 992) {
+          navLinks.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+  
+  // Testimonial slider functionality
+  const testimonialSlider = document.querySelector('.testimonial-slider');
+  const dots = document.querySelectorAll('.dot');
+  
+  if (testimonialSlider && dots.length) {
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        // Remove active class from all dots
+        dots.forEach(d => d.classList.remove('active'));
+        // Add active class to clicked dot
+        dot.classList.add('active');
+        
+        // Move the slider
+        testimonialSlider.style.transform = `translateX(-${index * 100}%)`;
+      });
+    });
+    
+    // Auto-advance the testimonials every 5 seconds
+    let currentIndex = 0;
+    const autoAdvance = setInterval(() => {
+      currentIndex = (currentIndex + 1) % dots.length;
+      dots[currentIndex].click();
+    }, 5000);
+    
+    // Stop auto-advance on user interaction
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        clearInterval(autoAdvance);
+      });
+    });
+  }
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      if (this.getAttribute('href') !== '#') {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          const headerHeight = document.querySelector('header').offsetHeight;
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+  
+  // Scroll effects - appear on scroll
+  const elements = document.querySelectorAll('.service-card, .testimonial-card, .advantage, .stat-box');
+  
+  // Add classes to trigger animations when scrolling
+  function checkScroll() {
+    elements.forEach(element => {
+      const elementPosition = element.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.2;
+      
+      if (elementPosition < screenPosition) {
+        element.classList.add('fade-in');
+      }
+    });
+  }
+  
+  // Call on load
+  checkScroll();
+  
+  // Call on scroll
+  window.addEventListener('scroll', checkScroll);
+  
+  // Handle resize events for responsive adjustments
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 992 && navLinks.classList.contains('active')) {
+      navLinks.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+  </script>
 </body>
 </html>
