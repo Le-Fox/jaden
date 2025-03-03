@@ -482,20 +482,24 @@ nav {
 }
 
 .testimonial-slider {
-  display: flex;
   overflow: hidden;
+}
+
+.testimonial-wrapper {
+  display: flex;
   transition: transform 0.5s ease;
 }
 
 .testimonial-card {
-  flex: 0 0 100%;
+  min-width: 100%; /* Each card takes full width */
+  box-sizing: border-box; /* Include padding and border in width */
   padding: 40px;
   background-color: var(--background-dark);
   border-radius: 10px;
   box-shadow: var(--shadow);
   text-align: left;
   max-width: 800px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .testimonial-rating {
@@ -1042,3 +1046,7 @@ html {
     scroll-behavior: auto !important;
   }
 }
+
+/* .dot.active {
+  background: black;
+} */
